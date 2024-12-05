@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UiTM student e-profile</title>
+    <link rel="icon" type="image/x-icon" href="uitm.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 80px;
+            color: white;
+        }
+        img {
+            width: 200px;
+            margin: 20px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px; /* Jarak antara form dan video */
+        }
+        .form-container {
+            margin: 20px auto;
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .marquee {
+            margin-top: 30px;
+            color: white;
+            font-size: 20px;
+            animation: moveText 10s linear infinite;
+        }
+        @keyframes moveText {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        video {
+            width: 400px; /* Saiz video */
+            border-radius: 10px; /* Gaya sudut video */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 14px;
+        }
+		 img {
+        width: 500px; 
+        height: 300px; 
+        margin: 20px 0;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to UiTM Student e-Profile</h1>
+    <img src="uitmlogo.png" alt="UiTM Logo">
+
+    <div class="form-container">
+    <form action="profilemenu.html"> 
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+    <div class="marquee">WELCOME !!</div>
+    
+    <footer>
+        &copy; 2024 Naim. All rights reserved.
+    </footer>
+</body>
+</html>

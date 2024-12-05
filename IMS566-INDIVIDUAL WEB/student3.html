@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+    <link rel="icon" type="image/x-icon" href="uitm.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('bgpro.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 50px;
+            color: white;
+            margin-top: 20px;
+        }
+        .profile-container {
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+        .profile-container img {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .profile-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .profile-container ul {
+            list-style: none;
+            padding: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .profile-container ul li {
+            margin: 10px 0;
+        }
+        .btn-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn-container button {
+            margin: 0 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-container button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Profile</h1>
+
+    <div class="profile-container">
+        <img src="pro3.png" alt="Student Photo">
+        <h2>NAME: MUHAMMAD NAJMI IMAN BIN MUKRI</h2>
+        <ul>
+            <li><strong>MATRIX NUMBER:</strong> 2024938599</li>
+            <li><strong>ADDRESS:</strong> Lot. 21, Jalan Aknum, 51200 Tanjung Tualang, Perak</li>
+            <li><strong>GENDER:</strong> Male</li>
+            <li><strong>PHONE NUMBER:</strong> 011-3778519</li>
+            <li><strong>SEMESTER:</strong> Semester 2</li>
+            <li><strong>PART:</strong> Part 1</li>
+        </ul>
+    </div>
+
+    <div class="btn-container">
+        <button onclick="location.href='profilemenu.html'">Home</button>
+        <button onclick="location.href='index.html'">Logout</button>
+    </div>
+
+    <footer>
+        &copy; 2024 Naim. All rights reserved.
+    </footer>
+</body>
+</html>
